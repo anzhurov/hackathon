@@ -9,14 +9,17 @@ body {
 .header-wrapper {
     width: 100%;
     height: 800px;
+    /*height: auto;*/
     background: url(../images/header-bg.png) no-repeat center top;
     background-size: 100%;
+    /*background-size: cover;*/
     position: relative;
 
 }
 
 header {
     background-color: #0e0f0e;
+    /*background-size: cover;*/
     opacity: 0.9;
     height: 80px;
 }
@@ -44,6 +47,7 @@ header {
     width: 80%;
     margin: 0 auto;
     display: block;
+    /*height: auto;*/
 }
 
 .nav ul {
@@ -123,72 +127,92 @@ a {
 }
 
 .challenge {
-    content: '';
-    width: 100%;
-    height: 700px;
-    background: url(../images/layout3.png) no-repeat;
-    background-size: 100%;
-    background-position: 0 0;
-    opacity: 0.95;
-    padding: 0;
-    position: relative;
+	content: '';
+	width: 100%;
+	height: 730px;
+	background: url(../images/layout3.png) no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	opacity:0.95;
+	padding: 1% 5% 0% 1%;
+	position: relative;
 }
 
-.challenge img {
-    width: 600px;
-    height: 400px;
-    padding: 150px 15px 0px 15px;
-    float: right;
-    position: absolute;
+.box1 img {
+	max-width: 100%;
+	padding: 0% 0% 25% 10%;
 }
 
 .challenge h3 {
-    font-size: 37px;
-    font-family: 'Oswald', sans-serif;
-    color: #0fe0e0;
-    padding: 0;
-    margin-left: 110px;
-    position: absolute;
+	font-size:2vw;
+	font-family: 'Oswald', sans-serif;
+	color:#0fe0e0;
+	padding: 5% 0px 0px 0px;
+	position: relative;
+    margin: 0px 0px 0px 0%;
 }
 
-.challenge p {
-    color: white;
-    font-size: 17px;
-    font-family: 'Oswald', sans-serif;
-    padding: 110px 0px 0px 110px;
-    float: left;
-    margin: 0;
+.conteiner {
+	overflow: hidden;
+	width: 100%;
 }
+
+.box1 {
+	white-space: nowrap;
+}
+
+.box1 div {
+	width:50%;
+	display:inline-block;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 1.3vw;
+	position: relative;
+	height: 0;
+}
+
+/*.challenge div {
+	color:white;
+	font-size: 1.3vw;
+	font-family: 'Oswald', sans-serif;
+	padding: 5% 0px 0px 11%;
+	float: left;
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 0;
+}*/
 
 .about {
-    content: '';
-    width: 100%;
-    height: 938px;
-    background: url(../images/layout4.png) no-repeat;
-    background-size: 100%;
-    background-position: 0 0;
-    opacity: 0.95;
-    padding: 0;
-    position: relative;
+	content: '';
+	width: 100%;
+	height: 938px;
+	background: url(../images/layout4.png) no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	opacity:0.95;
+	padding: 0;
+	position: relative;
 }
 
 .about h3 {
-    font-size: 37px;
-    font-family: 'Oswald', sans-serif;
-    color: #0fe0e0;
-    padding: 0;
-    margin-left: 28%;
-    position: absolute;
-    text-transform: uppercase;
+	font-size:2vw;
+	font-family: 'Oswald', sans-serif;
+	color:#0fe0e0;
+	padding: 5% 0% 0% 35%;
+	margin: 0;
+	position: relative;
+	text-transform: uppercase;
 }
 
 .mainpart ul {
-    color: white;
-    font-size: 23px;
-    padding-top: 100px;
-    font-family: 'Oswald', sans-serif;
-    float: left;
-    margin-left: 110px;
+	color: white;
+	font-size: 1.3vw;
+	padding-top: 100px;
+	font-family: 'Oswald', sans-serif;
+	float: left;
+	margin-left: 110px;
 }
 
 .mainpart ul li {
@@ -204,37 +228,37 @@ a {
 }
 
 .block {
-    overflow: hidden;
-    padding: 180px 110px 30px 144px;
-    margin-left: 38px;
+	overflow: hidden;
+	padding: 10% 0% 0% 13%;
+	margin-left: 1%;
+	width: 100%;
 }
 
 .block div {
-    float: left;
-    color: white;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    padding-left: 0px;
-    padding-right: 70px;
+	width: 14%;
+	float: left;
+	color: white;
+	font-size: 1.2vw;
+	font-family: 'Oswald', sans-serif;
+    padding-right: 5%;
 }
 
 .block div img {
-    width: 150px;
-    height: 150px;
-    position: relative;
+	max-width: 100%;
+	position: relative;
 
 }
 
 .program {
-    content: '';
-    width: 100%;
-    height: 646px;
-    background: url(../images/layout5.png) no-repeat;
-    background-size: 100%;
-    background-position: 0 0;
-    opacity: 0.95;
-    padding: 0;
-    position: relative;
+	content: '';
+	width: 100%;
+	height: 646px;
+	background: url(../images/layout5.png) no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	opacity:0.95;
+	padding: 0;
+	position: relative;
 }
 
 .programblock {
@@ -289,15 +313,15 @@ a {
 }
 
 .referees {
-    content: '';
-    width: 100%;
-    height: 700px;
-    background: url(../images/layout6.png) no-repeat;
-    background-size: 100%;
-    background-position: 0 0;
-    opacity: 0.95;
-    padding: 0;
-    position: relative;
+	content: '';
+	width: 100%;
+	height: 700px;
+	background: url(../images/layout6.png) no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	opacity:0.95;
+	padding: 0;
+	position: relative;
 }
 
 .referees button {
@@ -367,16 +391,16 @@ a {
 }
 
 .support {
-    content: '';
-    width: 100%;
-    height: 820px;
-    background: linear-gradient(#13233d, #0fe0e0, #122d59);
-    background-size: 100%;
-    background-position: 0 0;
-    opacity: 0.95;
-    padding: 0;
-    position: relative;
-    margin: 0;
+	content: '';
+	width: 100%;
+	height: 820px;
+	background:linear-gradient(#13233d, #0fe0e0, #122d59);
+	background-size: cover;
+	background-position: 0 0;
+	opacity:0.95;
+	padding: 0;
+	position: relative;
+	margin:0;
 }
 
 .textsup {
@@ -438,26 +462,26 @@ a {
 }
 
 .contacts {
-    content: '';
-    width: 100%;
-    height: 900px;
-    background-size: 100%;
-    background-position: 0 0;
-    padding: 0;
-    z-index: 1;
-    position: relative;
+	content: '';
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: 0 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
 }
 
 .contacts:before {
-    content: "";
-    background: url(../images/planet.jpg);
-    background-size: 112%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -2;
+  content: "";
+  background: url(../images/planet.jpg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;   
 }
 
 .contacts h3 {
@@ -518,20 +542,38 @@ a {
 }
 
 footer {
-    background-color: #13233d;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+	background-color: #13233d;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
 
-footer p {
-    color: white;
-    padding: 0;
-    font-size: 23px;
-    font-family: 'Oswald', sans-serif;
-    display: inline;
+.footbar {
+	overflow: hidden;
+	width: 200px;
+}
+
+.box {
+	white-space: nowrap;
+}
+
+.box div {
+	color:white;
+	padding: 0;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	width: 35%;
+
+}
+
+.footerbar p {
+	padding-bottom: 5px;
+	margin: 3px;
+	padding-left: 70px;
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
@@ -598,4 +640,3 @@ footer p {
     .nav a {
         color: red;
     }
-}
