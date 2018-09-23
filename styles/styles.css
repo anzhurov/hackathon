@@ -1,561 +1,601 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
-	position: relative;
-	padding: 0;
-	margin: 0;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.header-bg {
-	width: 100%;
-	height: 750px;
-	background: url(../images/header-bg.png) no-repeat;
-	background-size: 100%;
-	position: relative;
-	
+.header-wrapper {
+    width: 100%;
+    height: 800px;
+    background: url(../images/header-bg.png) no-repeat center top;
+    background-size: 100%;
+    position: relative;
+
 }
 
 header {
-	background-color: #0e0f0e;
-	opacity: 0.9;
+    background-color: #0e0f0e;
+    opacity: 0.9;
+    height: 80px;
 }
+
 .logo {
-	padding: 10px 0;
-	width: 30px;
+    padding: 10px 0;
+    width: 30px;
+    float: left;
 }
 
-.header::after {
-	content: '';
-	display: table;
-	clear: both;
+.nav {
+    float: right;
 }
 
-nav {
-	float: right;
+.clearfix::before {
+    display: table;
+    content: " ";
+}
+
+.clearfix::after {
+    clear: both;
 }
 
 .container {
-	width: 80%;
-	margin: 0 auto;
-	display: block;
-	height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-nav li {
-	display: inline-block;
-	margin-left: 50px;
-	padding-top: 20px;
+.nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 20px;
 }
 
-nav a {
-	color:white;
-	text-decoration: none;
-	font-size:25px;
-	font-family: 'Oswald', sans-serif;
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 
-nav a:hover {
-	color: #0fe0e0;
+.nav a:hover {
+    color: #0fe0e0;
 }
+
+.header-images {
+    padding-top: 50px;
+}
+
 .imgheader {
-	width: 100px;
-	height: 100px;
-	padding:50px 0px 0px 50px;
+    width: 100px;
+    height: 100px;
+    padding: 0 50px 0 0;
 }
 
-.imageshead {
-	margin-left: 70px;
+.header-wrapper h1 {
+    font-size: 80px;
+    color: white;
+    margin: 15px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 5px 10px black, 0 0 5px white;
 }
 
-.header-bg h1 {
-	font-size:80px;
-	color: white;
-	margin: 15px 0px 0px 110px;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	text-shadow: 5px 5px 10px black, 0 0 5px white;
+.header-wrapper h4 {
+    font-size: 20px;
+    color: white;
+    margin: 20px 0 50px 0;
 }
 
-.header-bg h4 {
-	font-size:20px;
-	color: white;
-	margin: 20px 0px 50px 110px;
+.header-button-block {
+    padding-top: 30px;
 }
 
-.header-bg button {
-	font-family: 'Oswald', sans-serif;
-	margin: 20px 0px 0px 220px;
-	transform: translate(-50%, -50%);
-	background: none;
-	color: #0fe0e0;
-	width: 200px;
-	height: 60px;
-	font-size: 20px;
-	border:3px solid #0fe0e0;
-	border-radius: 50px;
-	transition: .6s;
-	overflow: hidden;
+.blue-button {
+    transform: translate(-50%, -50%);
+    background: none;
+    border: 3px solid #0fe0e0;
+    border-radius: 50px;
+    transition: .6s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #0fe0e0;
+    overflow: hidden;
+    padding: 12px 30px 12px 30px;
 }
 
-.header-bg button:focus {
-	outline: none;
+.header-button-block :hover {
+    outline: none;
+    cursor: pointer;
+    background: #0fe0e0;
+    color: white;
 }
 
-.header-bg button:before {
-	content: '';
-	display: block;
-	background: none;
-	opacity: .5s;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
-}
-
-.header-bg button:after {
-	content: '';
-	display: block;
-	background: none;
-	opacity: 0;
-	outline: none;
-	filter: blur(30px);
-	transform: translate(-100px) scaleX(-15deg);
-}
-
-.header-bg button:hover {
-	cursor: pointer;
-	background: #0fe0e0;
-	color:white;
-}
-
-.header-bg button:hover:before {
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6s;
-	transition: .7s;
-}
-
-.header-bg button:hover:after {
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6s;
-	transition: .7s;
+a {
+    text-decoration: none;
 }
 
 .challenge {
-	content: '';
-	width: 100%;
-	height: 700px;
-	background: url(../images/layout3.png) no-repeat;
-	background-size: 100%;
-	background-position: 0 0;
-	opacity:0.95;
-	padding:0;	
-	position: relative;
+    content: '';
+    width: 100%;
+    height: 700px;
+    background: url(../images/layout3.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    opacity: 0.95;
+    padding: 0;
+    position: relative;
 }
 
 .challenge img {
-	width: 600px;
-	height: 400px;
-	padding: 150px 15px 0px 15px;
-	float: right;
-	position: absolute;
+    width: 600px;
+    height: 400px;
+    padding: 150px 15px 0px 15px;
+    float: right;
+    position: absolute;
 }
 
 .challenge h3 {
-	font-size:37px;
-	font-family: 'Oswald', sans-serif;
-	color:#0fe0e0;
-	padding: 0;
-	margin-left:110px;
-	position: absolute;
+    font-size: 37px;
+    font-family: 'Oswald', sans-serif;
+    color: #0fe0e0;
+    padding: 0;
+    margin-left: 110px;
+    position: absolute;
 }
 
 .challenge p {
-	color:white;
-	font-size:17px;
-	font-family: 'Oswald', sans-serif;
-	padding: 110px 0px 0px 110px;
-	float: left;
-	margin: 0;
+    color: white;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    padding: 110px 0px 0px 110px;
+    float: left;
+    margin: 0;
 }
 
 .about {
-	content: '';
-	width: 100%;
-	height: 938px;
-	background: url(../images/layout4.png) no-repeat;
-	background-size: 100%;
-	background-position: 0 0;
-	opacity:0.95;
-	padding: 0;
-	position: relative;
+    content: '';
+    width: 100%;
+    height: 938px;
+    background: url(../images/layout4.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    opacity: 0.95;
+    padding: 0;
+    position: relative;
 }
 
 .about h3 {
-	font-size:37px;
-	font-family: 'Oswald', sans-serif;
-	color:#0fe0e0;
-	padding: 0;
-	margin-left:28%;
-	position: absolute;
-	text-transform: uppercase;
+    font-size: 37px;
+    font-family: 'Oswald', sans-serif;
+    color: #0fe0e0;
+    padding: 0;
+    margin-left: 28%;
+    position: absolute;
+    text-transform: uppercase;
 }
 
 .mainpart ul {
-	color: white;
-	font-size: 23px;
-	padding-top: 100px;
-	font-family: 'Oswald', sans-serif;
-	float: left;
-	margin-left: 110px;
+    color: white;
+    font-size: 23px;
+    padding-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    margin-left: 110px;
 }
 
 .mainpart ul li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .mainpart img {
-	float: right;
-	padding-top: 122px;
-	margin: 0px 123px 0px 0px;
-	width: 579px;
+    float: right;
+    padding-top: 122px;
+    margin: 0px 123px 0px 0px;
+    width: 579px;
 
 }
 
 .block {
-	overflow: hidden;
-	padding: 180px 110px 30px 144px;
-	margin-left: 38px;
+    overflow: hidden;
+    padding: 180px 110px 30px 144px;
+    margin-left: 38px;
 }
 
 .block div {
-	float: left;
-	color: white;
-	font-size: 16px;
-	font-family: 'Oswald', sans-serif;
-	padding-left: 0px;
-	padding-right: 70px;
+    float: left;
+    color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 0px;
+    padding-right: 70px;
 }
 
 .block div img {
-	width: 150px;
-	height: 150px;
-	position: relative;
+    width: 150px;
+    height: 150px;
+    position: relative;
 
 }
 
 .program {
-	content: '';
-	width: 100%;
-	height: 646px;
-	background: url(../images/layout5.png) no-repeat;
-	background-size: 100%;
-	background-position: 0 0;
-	opacity:0.95;
-	padding: 0;
-	position: relative;
+    content: '';
+    width: 100%;
+    height: 646px;
+    background: url(../images/layout5.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    opacity: 0.95;
+    padding: 0;
+    position: relative;
 }
 
 .programblock {
-	padding: 99px 0px 0px 109px;
+    padding: 99px 0px 0px 109px;
 }
 
 .programblock div {
-	float: left;
-	color: white;
-	font-size: 23px;
-	font-family: 'Oswald', sans-serif;
-	padding:0px 20px 0px 0px;
+    float: left;
+    color: white;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0px 20px 0px 0px;
 }
 
 .program h3 {
-	font-size:40px;
-	font-family: 'Oswald', sans-serif;
-	color:#0fe0e0;
-	padding-top: 10px;
-	margin-left: 41%;
-	margin-right: 50%;
-	position: absolute;
-	text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #0fe0e0;
+    padding-top: 10px;
+    margin-left: 41%;
+    margin-right: 50%;
+    position: absolute;
+    text-transform: uppercase;
 }
 
 .programblock h4 {
-	color:#0fe0e0;
-	font-size: 30px;
-	padding-top: 30px;
+    color: #0fe0e0;
+    font-size: 30px;
+    padding-top: 30px;
 }
 
 .program span {
-	color: white;
-	font-size: 50px;
-	padding-top: 70px;
-	font-family: 'Oswald', sans-serif;
-	float: left;
-	margin-left: 7%;
-	text-shadow: 5px 5px 10px black, 0 0 5px white;
+    color: white;
+    font-size: 50px;
+    padding-top: 70px;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    margin-left: 7%;
+    text-shadow: 5px 5px 10px black, 0 0 5px white;
 }
 
 .referees:before {
-  content: "";
-  background: black no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+    content: "";
+    background: black no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .referees {
-	content: '';
-	width: 100%;
-	height: 700px;
-	background: url(../images/layout6.png) no-repeat;
-	background-size: 100%;
-	background-position: 0 0;
-	opacity:0.95;
-	padding: 0;
-	position: relative;
+    content: '';
+    width: 100%;
+    height: 700px;
+    background: url(../images/layout6.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    opacity: 0.95;
+    padding: 0;
+    position: relative;
 }
 
 .referees button {
-	font-family: 'Oswald', sans-serif;
-	margin: 90px 0px 0px 50%;
-	transform: translate(-50%, -50%);
-	background: none;
-	color: #0fe0e0;
-	width: 340px;
-	height: 100px;
-	font-size: 35px;
-	border:5px solid #0fe0e0;
-	border-radius: 50px;
-	transition: .6s;
-	overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    margin: 90px 0px 0px 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #0fe0e0;
+    width: 340px;
+    height: 100px;
+    font-size: 35px;
+    border: 5px solid #0fe0e0;
+    border-radius: 50px;
+    transition: .6s;
+    overflow: hidden;
 }
 
 .referees button:focus {
-	outline: none;
+    outline: none;
 }
 
 .referees button:before {
-	content: '';
-	display: block;
-	background: none;
-	opacity: .5s;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
+    content: '';
+    display: block;
+    background: none;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
 }
 
 .referees button:after {
-	content: '';
-	display: block;
-	background: none;
-	opacity: 0;
-	outline: none;
-	filter: blur(30px);
-	transform: translate(-100px) scaleX(-15deg);
+    content: '';
+    display: block;
+    background: none;
+    opacity: 0;
+    outline: none;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
 }
 
 .referees button:hover {
-	cursor: pointer;
-	background: #0fe0e0;
-	color:white;
+    cursor: pointer;
+    background: #0fe0e0;
+    color: white;
 }
 
 .referees button:hover:before {
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6s;
-	transition: .7s;
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6s;
+    transition: .7s;
 }
 
 .referees button:hover:after {
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6s;
-	transition: .7s;
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6s;
+    transition: .7s;
 }
 
 .referees h3 {
-	font-size:50px;
-	color: white;
-	margin: 0 auto;
-	font-family: 'Oswald', sans-serif;
-	text-shadow: 5px 5px 10px black, 0 0 5px white;
-	padding-left: 36%;
-	padding-top: 250px;
+    font-size: 50px;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 5px 10px black, 0 0 5px white;
+    padding-left: 36%;
+    padding-top: 250px;
 }
 
 .support {
-	content: '';
-	width: 100%;
-	height: 820px;
-	background:linear-gradient(#13233d, #0fe0e0, #122d59);
-	background-size: 100%;
-	background-position: 0 0;
-	opacity:0.95;
-	padding: 0;
-	position: relative;
-	margin:0;
+    content: '';
+    width: 100%;
+    height: 820px;
+    background: linear-gradient(#13233d, #0fe0e0, #122d59);
+    background-size: 100%;
+    background-position: 0 0;
+    opacity: 0.95;
+    padding: 0;
+    position: relative;
+    margin: 0;
 }
 
 .textsup {
-	color: white;
-	font-size: 23px;
-	font-family: 'Oswald', sans-serif;
-	padding-top: 200px;
-	padding-left: 21%;
-	padding-right: 110px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 200px;
+    padding-left: 21%;
+    padding-right: 110px;
 }
 
 .textsup p {
-	padding:4px;
-	margin: 0;
+    padding: 4px;
+    margin: 0;
 }
 
 .support h3 {
-	font-size: 40px;
-	font-family: 'Oswald', sans-serif;
-	color: #0fe0e0;
-	padding-top: 50px;
-	margin-left: 31%;
-	margin-right: auto;
-	position: absolute;
-	text-transform: uppercase;
-	}
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #0fe0e0;
+    padding-top: 50px;
+    margin-left: 31%;
+    margin-right: auto;
+    position: absolute;
+    text-transform: uppercase;
+}
 
 .support span {
-	color: white;
-	font-size: 50px;
-	padding-top: 0px;
-	font-family: 'Oswald', sans-serif;
-	float: left;
-	margin-left: 15%;
-	text-shadow: 5px 5px 10px black, 0 0 5px white;
+    color: white;
+    font-size: 50px;
+    padding-top: 0px;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    margin-left: 15%;
+    text-shadow: 5px 5px 10px black, 0 0 5px white;
 }
 
 .handleft {
-	position: absolute;
-	z-index: 3;
-	top: 232em;
+    position: absolute;
+    z-index: 3;
+    top: 232em;
 
-	
 }
 
 .handright {
-	position: absolute;
-	z-index: 3;
-	top: 232em;
+    position: absolute;
+    z-index: 3;
+    top: 232em;
 }
 
 .handleft img {
-	width: 570px;
+    width: 570px;
 }
 
 .handright img {
-	width: 570px;
-	float: right;
-	padding-left: 720px;
+    width: 570px;
+    float: right;
+    padding-left: 720px;
 }
 
 .contacts {
-	content: '';
-	width: 100%;
-	height: 900px;
-	background-size: 100%;
-	background-position: 0 0;
-	padding: 0;
-	z-index: 1;
-	position: relative;
+    content: '';
+    width: 100%;
+    height: 900px;
+    background-size: 100%;
+    background-position: 0 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
 }
 
 .contacts:before {
-  content: "";
-  background: url(../images/planet.jpg);
-  background-size: 112%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -2;   
+    content: "";
+    background: url(../images/planet.jpg);
+    background-size: 112%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
 }
 
 .contacts h3 {
-	font-size: 50px;
-	font-family: 'Oswald', sans-serif;
-	color: #0fe0e0;
-	padding-top: 10px;
-	margin-left: 42%;
-	margin-right: auto;
-	position: absolute;
-	text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #0fe0e0;
+    padding-top: 10px;
+    margin-left: 42%;
+    margin-right: auto;
+    position: absolute;
+    text-transform: uppercase;
 }
 
 .contacts p {
-	color: white;
-	font-size: 23px;
-	font-family: 'Oswald', sans-serif;
-	padding-top: 0;
-	padding-left: 13%;
-	padding-right: 0px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 0;
+    padding-left: 13%;
+    padding-right: 0px;
 }
 
 .textcontact {
-	padding-top: 150px;
+    padding-top: 150px;
 }
 
 .contacts iframe {
-	float: right;
-	height: 400px;
-	width: 600px;
-	position: relative;
-	top: -25em;
-	padding-right: 80px;
+    float: right;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    top: -25em;
+    padding-right: 80px;
 }
 
 .sponsors {
-	float: left;
-	top: 33em;
-	position: absolute;
-	margin-left: 127px;
+    float: left;
+    top: 33em;
+    position: absolute;
+    margin-left: 127px;
 }
 
 .sponsors img {
-	width: 180px;
-	height: 180px;
-	padding: 109px 0px 14px 35px;
+    width: 180px;
+    height: 180px;
+    padding: 109px 0px 14px 35px;
 }
 
 .bg {
-	position:fixed;
+    position: fixed;
 }
 
 .bg img {
-	width: 100%;
-	position: relative;
-	z-index: -1;
-	top:-150em;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    top: -150em;
 }
 
 footer {
-	background-color: #13233d;
-	position: relative;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
+    background-color: #13233d;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
 }
 
 footer p {
-	color:white;
-	padding: 0;
-	font-size: 23px;
-	font-family: 'Oswald', sans-serif;
-	display: inline;
+    color: white;
+    padding: 0;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    display: inline;
 }
 
-footer div {
-	}
+@media (min-width: 300px) and (max-width: 400px) {
+    .header-wrapper {
+        width: 100%;
+        height: 400px;
+        background-size: 100%;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .logo {
+        padding: 5px 0;
+        width: 15px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .nav li {
+        margin-left: 25px;
+        padding-top: 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .header-images {
+        padding-top: 25px;
+    }
+
+    .imgheader {
+        width: 50px;
+        height: 50px;
+        padding: 0 25px 0 0;
+    }
+
+    .header-wrapper h1 {
+        font-size: 40px;
+        margin: 12px 0 0 0;
+        text-shadow: 3px 3px 5px black, 0 0 2px white;
+    }
+
+    .header-wrapper h4 {
+        font-size: 10px;
+        margin: 10px 0 25px 0;
+    }
+
+    .header-button-block {
+        padding-top: 15px;
+    }
+
+    .blue-button {
+        border: 2px solid #0fe0e0;
+        border-radius: 25px;
+        font-size: 10px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    .nav a {
+        color: red;
+    }
+}
