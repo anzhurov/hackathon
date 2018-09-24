@@ -39,8 +39,8 @@
 <div class="challenge" id="about">
     <div class="container">
         <div class="box1">
-            <h3 class="getchellenge">Бросай вызов</h3>
-            <div><p> Этой осенью мы предлагаем всем талантливым студентам Харькова принять<br>
+            <h3 class="getchellenge" id = "challengeH" style="opacity: 0">Бросай вызов</h3>
+            <div id = "big-text_1" style="opacity: 0"><p> Этой осенью мы предлагаем всем талантливым студентам Харькова принять<br>
                 участие в хакатоне нового формата - SMART KHARKOV & IOT 2018.<br><br>
 
                 Хакатон - это марафон, где программисты за короткое время<br>
@@ -59,8 +59,10 @@
 
                 Что тебя ждет?<br>
                 Участников ждут приятные призы и сувениры от партнеров,<br>
-                единомышленники и новые идеи, вкусная еда и печеньки.</p></div>
-            <div><img src="images/phone.png" alt="">
+                единомышленники и новые идеи, вкусная еда и печеньки.</p>
+            </div>
+            <div>
+                <img src="images/phone.png" alt="">
             </div>
         </div>
     </div>
@@ -68,11 +70,11 @@
 
 <!--ABOUT WRAPPER-->
 <div class="about">
-    <div class="title-wrapper">
+    <div class="title-wrapper" id="aboutH" style="opacity: 0">
         <h3>Smart Kharkov & IOT 2018 - это</h3>
     </div>
     <div class="container">
-        <div class="about-blocks-wrapper clearfix">
+        <div class="about-blocks-wrapper clearfix" style="opacity: 0">
             <div class="about-block">
                 <img src="images/block-1.png" alt="">
                 <p>48 часов для креатива,<br>
@@ -101,12 +103,12 @@
     </div>
 
     <div class="mainpart">
-        <div class="title-wrapper">
+        <div class="title-wrapper" id = "wayH" style="opacity: 0">
             <h3>Основные направления хакатона</h3>
         </div>
         <div class="mainpart-wrapper">
             <div class="container clearfix">
-                <ul>
+                <ul id = "ul-ways" style="opacity: 0">
                     <li>1. Умный дом</li>
                     <li>2. Мобильные приложения</li>
                     <li>3. Открытые данные</li>
@@ -125,11 +127,11 @@
 <!---->
 <div class="program">
     <section id="program">
-        <h3>Программа</h3>
-        <div class="programblock">
+        <h3 id = "programH" style="opacity: 0">Программа</h3>
+        <div class="programblock" id="programBlock" style="opacity: 0">
             <div>
                 <h4>26 октября</h4>
-                <p>17:00 - Регистрация и welcome cofe<br>
+                <p>17:00 - Регистрация и welcome coffee<br>
                     18:00 - Открытие хакатона<br>
                     18:30 - Презентация идей проектов<br>
                     19:30 - Старт разработки проектов<br>
@@ -153,8 +155,8 @@
                     17:00 - Презентация проемов<br>
                     19:00 - Награждение победителей</p>
             </div>
+            <p id = "ev_place" style="opacity: 0"><span>Место проведения: Колонный зал ХНУ им. В. Н. Каразина</span></p>
         </div>
-        <p><span>Место проведения: Колонный зал ХНУ им. В. Н. Каразина</span></p>
     </section>
 </div>
 <div class="referees">
@@ -169,10 +171,10 @@
 <div class="handright"><img src="images/handright.png" alt=""></div>
 <div class="support">
     <section class="support">
-        <h3>Техническая поддержка</h3>
-        <div class="textsup">
+        <h3 id = "helpH" style="opacity: 0">Техническая поддержка</h3>
+        <div class="textsup" id = "sup" style="opacity: 0">
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Что такое SMART KHARKOV & IOT 2018?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -180,7 +182,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Для чего SMART KHARKOV & IOT 2018?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -188,7 +190,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Кто может прийти?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -196,7 +198,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Сколько людей будет в команде? Если нет команды, могу ли я работать один / одна?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -204,7 +206,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Можно ли представить на хакатоне уже существующий продукт?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -212,7 +214,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Что нужно с собой взять?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -225,7 +227,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Будет ли еда на хакатоне?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -233,7 +235,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Где я могу переночевать?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -241,7 +243,7 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Как будет проходить презентация проектов?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -249,26 +251,25 @@
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Как будет определен победитель?</p>
                 </div>
                 <div class = "answer" style = "display: none">
-                    <p>
-                        Победители будут определены членами жюри в 5 номинациях.
-                        Критерии оценивания:
-                        Новизна
-                        Актуальность проекта для Харькова
-                        Качество презентации:
-                        Качество прототипа:
-                        Креативность и оригинальность:
-                        Потенциальный социальный эффект от использования идеи (проекта)
-                        Возможности коммерциализации идеи (проекта)
-                        Работа в команде
-                    </p>
+                    <p>Победители будут определены членами жюри в 5 номинациях. Критерии оценивания:</p>
+                    <ul>
+                        <li>Новизна</li>
+                        <li>Актуальность проекта для Харькова</li>
+                        <li>Качество презентации</li>
+                        <li>Качество прототипа</li>
+                        <li>Креативность и оригинальность</li>
+                        <li>Потенциальный социальный эффект от использования идеи (проекта)</li>
+                        <li>Возможности коммерциализации идеи (проекта)</li>
+                        <li>Работа в команде</li>
+                    </ul>
                 </div>
             </div>
             <div class = "question-pair">
-                <div>
+                <div class="question">
                     <p># Будут ли мне помогать более квалифицированные специалисты на хакатоне?</p>
                 </div>
                 <div class = "answer" style = "display: none">
@@ -276,13 +277,13 @@
                 </div>
             </div>
         </div>
-        <p><span>Есть еще вопросы? Пиши - hackathon@karazin.ua</span></p>
+        <p id = "inf_q" style="opacity: 0"><span>Есть еще вопросы? Пиши - hackathon@karazin.ua</span></p>
     </section>
 </div>
 <div class="contacts">
     <section id="contacts">
-        <h3>Контакты</h3>
-        <div class="textcontact">
+        <h3 id = "contactsH" style="opacity: 0">Контакты</h3>
+        <div class="textcontact" id="contacts-content" style="opacity: 0">
             <p>26 - 28 октября<br>
                 SMART KHARKOV & IOT 2018</p>
             <p>ХНУ им. В. Н. Каразина<br>

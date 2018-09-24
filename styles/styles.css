@@ -642,3 +642,7 @@ footer {
         color: red;
     }
 }
+
+.question p {
+    color: #13233d;
+}
